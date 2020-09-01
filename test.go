@@ -15,6 +15,5 @@ func main() {
 
 	fmt.Println(V1)
 	fmt.Println(V2)
-	fmt.Println(V3)
 
 }
