@@ -1,6 +1,8 @@
 def DOCKER_IMAGE_NAME = "wspark83/jenkins"           // 생성하는 Docker image 이름
 def DOCKER_IMAGE_TAGS = "springboot-test"  // 생성하는 Docker image 태그
-def NAMESPACE = "ns-project"
+def USERNAME = "wspark83"
+def PASSWORD = "qkrwlsA1"
+def NAMESPACE = "jenkins"
 def VERSION = "${env.BUILD_NUMBER}"
 def DATE = new Date();
   
@@ -54,7 +56,7 @@ podTemplate(label: 'builder',
                             --docker-server=https://index.docker.io/v1/ \
                             --docker-username=${USERNAME} \
                             --docker-password=${PASSWORD} \
-                            --docker-email=ekfrl2815@gmail.com \
+                            --docker-email=jjomacson@gmail.com \
                             -n ${NAMESPACE}
                         """
                         /* k8s-deployment.yaml 의 env값을 수정해준다(DATE로). 배포시 수정을 해주지 않으면 변경된 내용이 정상 배포되지 않는다. */
