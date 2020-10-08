@@ -7,7 +7,7 @@ func main() {
 	var s2 string = "한글"
 	var V1 bool = true
 	var V2 bool = false
-	var V3 bool = false
+//	var V3 bool = false
 
 	fmt.Println("s1 = ", len(s1))
 	fmt.Println("s2 = ", len(s2))
